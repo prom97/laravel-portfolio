@@ -5,12 +5,14 @@
     @isset($project)
         <h1>{{ $project->title }}</h1>
 
-        <a href="{{ route('projects.edit', $project) }}">Editar</a>
+        @auth
+            <a href="{{ route('projects.edit', $project) }}">Editar</a>
 
-        <form action="{{ route('projects.destroy', $project) }}" method="POST">
-            @csrf @method('DELETE')
-            <button>Eliminar</button>
-        </form>
+            <form action="{{ route('projects.destroy', $project) }}" method="POST">
+                @csrf @method('DELETE')
+                <button>Eliminar</button>
+            </form>
+        @endauth
 
         <ul>
             <li>Descripción: {{ $project->description }}</li>

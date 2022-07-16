@@ -3,8 +3,10 @@
 
 @section('content')
     <h1>{{ __('Projects') }}</h1>
-    
-    <a href="{{ route('projects.create') }}">Crear proyecto</a>
+
+    @auth
+        <a href="{{ route('projects.create') }}">Crear proyecto</a>
+    @endauth
 
     <ul>
         @forelse ($projects as $item)

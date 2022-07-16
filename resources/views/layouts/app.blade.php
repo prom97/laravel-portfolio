@@ -24,9 +24,6 @@
 
 <body>
     <div id="app">
-        @auth
-        <h2>ESTAS LOGUEADO</h2>
-        @endauth
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 @if (Auth::user())
@@ -34,9 +31,9 @@
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 @else
-                <a class="navbar-brand" href="{{ route('welcome') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+                    <a class="navbar-brand" href="{{ route('welcome') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a>
                 @endif
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -92,6 +89,9 @@
 
         <main class="py-4">
             @include('layouts.session-status')
+            @auth
+                <p>ESTAS LOGUEADO</p>
+            @endauth
             @yield('content')
         </main>
     </div>
