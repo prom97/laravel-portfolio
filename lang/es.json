@@ -1,0 +1,21 @@
+{
+    "Home": "Inicio",
+    "About": "Quienes Somos",
+    "Projects": "Proyectos",
+    "Create project": "Crear proyecto",
+    "Edit project": "Editar proyecto",
+    "Contact": "Contacto",
+    "Send": "Enviar",
+    "Login": "Iniciar sesión",
+    "Logout": "Cerrar sesión",
+    "Register": "Registrarse",
+    "Email Address": "Correo electrónico",
+    "Password": "Contraseña",
+    "Remember Me": "Recuérdame",
+    "Forgot Your Password?": "Ha olvidado su contraseña?",
+    "Name": "Nombre",
+    "Confirm Password": "Confirmar contraseña",
+    "You are logged in!": "Usted está logueado!",
+    "Dashboard": "Panel"
+    
+}
