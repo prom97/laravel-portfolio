@@ -6,9 +6,6 @@
 
     <h1>{{ __('Contact') }}</h1>
 
-
-    @include('layouts.session-status') <br>
-
         <form action="{{ route('contact.store') }}" method="POST">
             @csrf
             <input type="text" name="name" placeholder="Nombre..." value="{{ old('name') }}"><br>

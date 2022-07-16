@@ -35,7 +35,7 @@ Route::resources([
     'projects' => \App\Http\Controllers\ProjectController::class
 ]);
 
-Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('contact', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
 Auth::routes();
 
