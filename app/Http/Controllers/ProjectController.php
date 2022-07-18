@@ -6,6 +6,7 @@ use App\Models\Project;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProjectRequest;
 
+
 class ProjectController extends Controller
 {
 
@@ -20,7 +21,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::latest('updated_at')->get(); // latest-> ordena según la columna updated_at
+        // $projects = Project::latest('updated_at')->get(); // latest-> ordena según la columna updated_at
+        $projects = Project::latest()->paginate(5);
         return view('projects.index', compact('projects'));
     }
 

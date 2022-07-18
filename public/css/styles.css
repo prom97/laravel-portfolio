@@ -1,4 +1,37 @@
-h1{
-    width: fit-content;
-    margin:auto;
+.menuSup a:hover {
+    color: #53c822 !important;
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #5ecc31;
+    background-image: var(--bs-gradient);
+    border-color: #55c925;
+}
+
+a.page-link {
+    box-shadow: 0px 0px 2px #00000045;
+    color: #6a6a6a;
+}
+
+a.page-link:hover {
+    background-color: #5dcc3156;
+}
+
+.projectItem:hover {
+    background-color: #5acb2c26;
+    border: 1px solid #57ca28 !important;
+    border-radius: 50px;
+}
+
+ul.pagination {
+    margin-top: 10px;
 }

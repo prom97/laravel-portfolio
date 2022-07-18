@@ -16,6 +16,8 @@
     "Name": "Nombre",
     "Confirm Password": "Confirmar contraseña",
     "You are logged in!": "Usted está logueado!",
-    "Dashboard": "Panel"
+    "Dashboard": "Panel",
+    "Reset Password": "Restablecer contraseña",
+    "Send Password Reset Link": "Enviar correo para restablecer contraseña"
     
 }

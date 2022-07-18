@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -24,7 +24,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm text-center menuSup">
             <div class="container">
                 @if (Auth::user())
                     <a class="navbar-brand" href="{{ route('home') }}">
@@ -69,7 +69,7 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -87,13 +87,19 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 min-vh-100">
             @include('layouts.session-status')
-            @auth
-                <p>ESTAS LOGUEADO</p>
-            @endauth
             @yield('content')
         </main>
+
+        {{-- footer --}}
+        <footer class="bg-dark text-center text-white text-lg-start mt-auto">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © {{ now()->year }} | Portfolio
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
 </body>
 
