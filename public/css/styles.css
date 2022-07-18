@@ -1,4 +1,4 @@
-.menuSup a:hover {
+.menuSup a.nav-link:hover {
     color: #53c822 !important;
 }
 
@@ -9,6 +9,7 @@
 .btn-primary:hover {
     color: #fff;
 }
+
 
 .btn-outline-primary:hover {
     color: #fff;
@@ -34,4 +35,11 @@ a.page-link:hover {
 
 ul.pagination {
     margin-top: 10px;
+}
+
+.btnLogin:hover {
+    color: #fff !important;
+    background-color: #5ecc31;
+    background-image: var(--bs-gradient);
+    border-color: #55c925;
 }

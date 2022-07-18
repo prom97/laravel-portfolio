@@ -5,7 +5,7 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-12 col-sm-10 col-lg-6 mx-auto">
-                <div class="bg-white p-5 shadow rounded">
+                <div class="bg-white p-5 shadow rounded-3">
                     @isset($project)
                         <h1>{{ $project->title }}</h1>
                         <p class="text-secondary">{{ $project->description }}</p>
