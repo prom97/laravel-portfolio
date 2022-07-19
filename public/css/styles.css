@@ -2,6 +2,10 @@
     color: #53c822 !important;
 }
 
+.footerClass a:hover{
+    color: #53c822 !important;
+}
+
 .btn-primary {
     color: #fff;
 }
