@@ -33,7 +33,7 @@
                 <li class="list-group-item border-0 mt-5 mb-3 shadow-sm text-center">No hay proyectos actualmente</li>
             @endforelse
             <div class="d-flex justify-content-end">
-                {{ $projects->links() }}
+                {{ $projects->onEachSide(0)->links() }}
             </div>
         </ul>
     </div>
