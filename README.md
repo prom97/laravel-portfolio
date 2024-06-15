@@ -16,7 +16,7 @@
 ## Deployment
 - Clone project
 ```
-git clone https://github.com/PabloDamianRomero/laravel-portfolio.git
+git clone https://github.com/prom97/laravel-portfolio.git
 ```
 - Install dependencies from composer.json and package.json (inside the project directory)
 ```
